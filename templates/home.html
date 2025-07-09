@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Feed</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .navbar img {
+            width: 300px;
+            height: 150px;
+        }
+        .feed {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .post {
+            margin-bottom: 25px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .post h4 {
+            margin: 10px 0 5px;
+        }
+        .post p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src=""{{ url_for('static', filename='images/instalogo.png') }} alt="Instagram">
+</div>
+
+<div class="feed">
+    <div class="post">
+        <h4>@user123</h4>
+        <img src="https://via.placeholder.com/450x300" alt="Post">
+        <p>Just hanging out at the beach! 🌊</p>
+    </div>
+    <div class="post">
+        <h4>@cooldev</h4>
+        <img src="https://via.placeholder.com/450x300" alt="Post">
+        <p>New code drops today!</p>
+    </div>
+</div>
+
+</body>
+</html>
+
