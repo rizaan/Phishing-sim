@@ -1,4 +1,4 @@
-# Phish_test
+# Phish-sim
 
 A minimal **phishing-awareness demonstration** built with Flask. It serves a fake "Login" page styled to look like a social-media sign-in, captures whatever credentials are typed into it, prints them to the server terminal, and redirects the visitor to a harmless placeholder feed.
 
